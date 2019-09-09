@@ -16,6 +16,8 @@ class CeasarCipherViewController: UIViewController {
         
     }
     
+     var cipherCeasar: CipherProtocol = CeaserCipher()
+    
     struct CeaserCipher: CipherProtocol{
         
         //************************* Beginning of Encrypt Method *************************//

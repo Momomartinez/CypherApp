@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mH6-xr-LIy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Jfx-vA-ZNq">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,27 +18,79 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WYl-g5-U42">
-                                <rect key="frame" x="21" y="415" width="333" height="48"/>
-                                <color key="backgroundColor" red="0.91240368150684936" green="0.29395869006849318" blue="0.47883668664383561" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="Let's Begin!">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="Ttl-Od-Toq"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="Nsb-sh-lpx">
+                                <rect key="frame" x="24" y="186" width="327" height="312"/>
+                                <subviews>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WYl-g5-U42">
+                                        <rect key="frame" x="0.0" y="0.0" width="327" height="60"/>
+                                        <color key="backgroundColor" red="0.91240368150684936" green="0.29395869006849318" blue="0.47883668664383561" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="CesarCypher">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="bwW-GE-sFa" kind="show" id="HuZ-V4-nLB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CDb-oX-Eyb">
+                                        <rect key="frame" x="0.0" y="84" width="327" height="60"/>
+                                        <color key="backgroundColor" red="0.085041746779999997" green="0.72795050760000002" blue="0.71724810839999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="AlphaCypher">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="iPY-Zo-kMT" kind="show" id="ihf-Mf-XVj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ef5-FO-seR">
+                                        <rect key="frame" x="0.0" y="168" width="327" height="60"/>
+                                        <color key="backgroundColor" red="0.0" green="0.64019817609999996" blue="0.29048052229999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="UnicodeCypher">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="OcI-ra-JF2" kind="show" id="PdL-x8-0UA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="joF-AD-AXN">
+                                        <rect key="frame" x="0.0" y="252" width="327" height="60"/>
+                                        <color key="backgroundColor" red="0.64940238149999996" green="0.31482305490000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="EmojiCode">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="VAd-Rr-wZu" kind="show" id="HcD-Wl-CTi"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CipherMessages" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qni-Iq-Lum">
-                                <rect key="frame" x="21" y="285" width="333" height="51"/>
+                                <rect key="frame" x="21" y="77" width="333" height="51"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="51" id="O75-vW-ICl"/>
-                                    <constraint firstAttribute="width" constant="333" id="RiA-GN-CHo"/>
+                                    <constraint firstAttribute="height" constant="51" id="eKd-Xh-gku"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="26"/>
                                 <nil key="textColor"/>
@@ -47,12 +99,13 @@
                         </subviews>
                         <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="qni-Iq-Lum" firstAttribute="leading" secondItem="yHP-oY-IQv" secondAttribute="leading" constant="21" id="35j-O9-Z3G"/>
-                            <constraint firstItem="yHP-oY-IQv" firstAttribute="trailing" secondItem="qni-Iq-Lum" secondAttribute="trailing" constant="21" id="Chz-65-Bdf"/>
-                            <constraint firstItem="qni-Iq-Lum" firstAttribute="top" secondItem="yHP-oY-IQv" secondAttribute="top" constant="221" id="PAC-1R-bz5"/>
-                            <constraint firstItem="yHP-oY-IQv" firstAttribute="trailing" secondItem="WYl-g5-U42" secondAttribute="trailing" constant="21" id="Rcw-yL-nT6"/>
-                            <constraint firstItem="WYl-g5-U42" firstAttribute="top" secondItem="qni-Iq-Lum" secondAttribute="bottom" constant="79" id="ZTs-QM-FJ2"/>
-                            <constraint firstItem="WYl-g5-U42" firstAttribute="leading" secondItem="yHP-oY-IQv" secondAttribute="leading" constant="21" id="wPM-Ra-CBi"/>
+                            <constraint firstItem="qni-Iq-Lum" firstAttribute="centerX" secondItem="Nsb-sh-lpx" secondAttribute="centerX" id="9dM-YM-QEW"/>
+                            <constraint firstItem="qni-Iq-Lum" firstAttribute="top" secondItem="yHP-oY-IQv" secondAttribute="top" constant="13" id="b3p-uS-Ddk"/>
+                            <constraint firstItem="qni-Iq-Lum" firstAttribute="leading" secondItem="yHP-oY-IQv" secondAttribute="leading" constant="21" id="c75-OJ-yK6"/>
+                            <constraint firstItem="qni-Iq-Lum" firstAttribute="centerX" secondItem="C3r-9h-UJn" secondAttribute="centerX" id="gVM-o9-zpZ"/>
+                            <constraint firstItem="Nsb-sh-lpx" firstAttribute="leading" secondItem="yHP-oY-IQv" secondAttribute="leading" constant="24" id="pDk-pV-uxz"/>
+                            <constraint firstItem="yHP-oY-IQv" firstAttribute="bottom" secondItem="Nsb-sh-lpx" secondAttribute="bottom" constant="169" id="psN-kK-zZ4"/>
+                            <constraint firstItem="Nsb-sh-lpx" firstAttribute="top" secondItem="qni-Iq-Lum" secondAttribute="bottom" constant="58" id="qfI-Wt-p0B"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="yHP-oY-IQv"/>
                     </view>
@@ -60,7 +113,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fcQ-cy-2mg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="948" y="-191.1544227886057"/>
+            <point key="canvasLocation" x="3132" y="-501.49925037481262"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -71,78 +124,78 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oFv-jN-Jwk">
-                                <rect key="frame" x="16" y="109" width="343" height="30"/>
+                                <rect key="frame" x="16" y="65" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Input" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J2R-sV-njo">
-                                <rect key="frame" x="16" y="72" width="39" height="21"/>
+                                <rect key="frame" x="16" y="28" width="39" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t7D-q9-YZg">
-                                <rect key="frame" x="16" y="192" width="343" height="30"/>
+                                <rect key="frame" x="16" y="148" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Secret" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CY1-hj-79w">
-                                <rect key="frame" x="16" y="155" width="50" height="21"/>
+                                <rect key="frame" x="16" y="111" width="50" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GuP-vz-1G8">
-                                <rect key="frame" x="16" y="238" width="343" height="30"/>
+                                <rect key="frame" x="16" y="194" width="343" height="30"/>
                                 <state key="normal" title="Encrypt"/>
                                 <connections>
                                     <action selector="encryptButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aq3-dH-QG8"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HrY-NP-lku">
-                                <rect key="frame" x="16" y="498" width="180" height="30"/>
+                                <rect key="frame" x="16" y="454" width="180" height="30"/>
                                 <state key="normal" title="AlphanumericCesarCipher"/>
                                 <connections>
                                     <action selector="cipherSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MHj-85-cyV"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cE5-FE-Ogz">
-                                <rect key="frame" x="16" y="337" width="343" height="30"/>
+                                <rect key="frame" x="16" y="293" width="343" height="30"/>
                                 <state key="normal" title="Decrypt"/>
                                 <connections>
                                     <action selector="decrpytButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xke-sr-Vip"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dc4-1h-5tS">
-                                <rect key="frame" x="16" y="383" width="343" height="21"/>
+                                <rect key="frame" x="16" y="339" width="343" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YJv-Hn-OQ1">
-                                <rect key="frame" x="16" y="284" width="343" height="21"/>
+                                <rect key="frame" x="16" y="240" width="343" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2L1-Rv-wDg">
-                                <rect key="frame" x="16" y="460" width="94" height="30"/>
+                                <rect key="frame" x="16" y="416" width="94" height="30"/>
                                 <state key="normal" title="CeaserCipher"/>
                                 <connections>
                                     <action selector="cipherSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nw0-ZR-UPN"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sh9-Bh-yAg">
-                                <rect key="frame" x="16" y="536" width="103" height="30"/>
+                                <rect key="frame" x="16" y="492" width="103" height="30"/>
                                 <state key="normal" title="UnicodeCipher"/>
                                 <connections>
                                     <action selector="cipherSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="drv-cX-wBl"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z2w-1A-HEK">
-                                <rect key="frame" x="16" y="574" width="83" height="30"/>
+                                <rect key="frame" x="16" y="530" width="83" height="30"/>
                                 <state key="normal" title="EmojiCipher"/>
                                 <connections>
                                     <action selector="cipherSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kcb-G4-b6x"/>
@@ -185,6 +238,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="GsS-lW-EpN"/>
                     <connections>
                         <outlet property="decryptOutput" destination="dc4-1h-5tS" id="ZSf-yT-q5B"/>
                         <outlet property="encryptOutput" destination="YJv-Hn-OQ1" id="P7H-MB-QkJ"/>
@@ -194,9 +248,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1826" y="-352"/>
+            <point key="canvasLocation" x="5519.1999999999998" y="-622.03898050974522"/>
         </scene>
-        <!--Ceasar Cipher View Controller-->
+        <!--Item-->
         <scene sceneID="4Ol-Ir-sN9">
             <objects>
                 <viewController id="bwW-GE-sFa" customClass="CeasarCipherViewController" customModule="SpyApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -204,88 +258,149 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Ceasar Cipher" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HyF-eR-XzU">
-                                <rect key="frame" x="16" y="121" width="343" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EmojiCode Cipher" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HfS-K0-S2L">
+                                <rect key="frame" x="16" y="99" width="343" height="37"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WXe-4y-WH0">
-                                <rect key="frame" x="16" y="209" width="69" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Message:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dst-ff-QFt">
+                                <rect key="frame" x="16" y="158" width="74" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Shift Message by:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XxS-1K-DUX">
-                                <rect key="frame" x="16" y="292" width="137" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Shift Message by:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CH2-Xv-Gl7">
+                                <rect key="frame" x="16" y="224.5" width="136.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Message to encrypt" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cL8-bo-h1s">
-                                <rect key="frame" x="16" y="238" width="343" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Message to encrypt" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tuY-RS-ISx">
+                                <rect key="frame" x="16" y="186.5" width="343" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.77614751476478694" blue="0.83420110128138647" alpha="0.80072773972602751" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="qgM-ce-q2z"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Secret number " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cko-Lr-TEz">
-                                <rect key="frame" x="16" y="321" width="343" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Secret number " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7tt-Rl-aCc">
+                                <rect key="frame" x="16" y="252" width="343" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.77614751479999999" blue="0.83420110130000003" alpha="0.8007277397" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="yjc-Kw-GUC"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jmf-ov-77u">
-                                <rect key="frame" x="16" y="389" width="343" height="30"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
-                                <state key="normal" title="Encrypt Message">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n57-wl-Oxx">
-                                <rect key="frame" x="16" y="513" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
-                                <state key="normal" title="Decrypt Message">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SmJ-7T-bHS">
-                                <rect key="frame" x="16" y="551" width="343" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C0I-b6-4NC">
-                                <rect key="frame" x="16" y="427" width="343" height="21"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="D0u-K8-Uo6">
+                                <rect key="frame" x="16" y="332" width="343" height="116"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pid-c0-Frr">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="40"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="NJL-25-VTG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <state key="normal" title="Encrypt">
+                                            <color key="titleColor" red="0.91240368149999995" green="0.29395869009999998" blue="0.47883668660000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OBk-co-cLm">
+                                        <rect key="frame" x="0.0" y="48" width="343" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="ERn-4o-y0W"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                        <state key="normal" title="Encrypt Message">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S9k-Sd-64L">
+                                        <rect key="frame" x="0.0" y="86" width="343" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="4cY-lp-mOO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="K0M-9c-eS3">
+                                <rect key="frame" x="16" y="478" width="343" height="116"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rX3-he-hCp">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="40"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="nlI-qR-4IM"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <state key="normal" title="Decrypt">
+                                            <color key="titleColor" red="0.91240368149999995" green="0.29395869009999998" blue="0.47883668660000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ste-ni-Dgp">
+                                        <rect key="frame" x="0.0" y="58" width="343" height="10"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="10" id="8Qn-RY-SM4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                        <state key="normal" title="Decrypt Message">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ykb-1R-3A0">
+                                        <rect key="frame" x="0.0" y="86" width="343" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="BvY-RW-UP0"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.91240368149999995" green="0.29395869009999998" blue="0.47883668660000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="ojp-xy-cK8" firstAttribute="trailing" secondItem="Cko-Lr-TEz" secondAttribute="trailing" constant="16" id="5E0-wy-0OE"/>
-                            <constraint firstItem="ojp-xy-cK8" firstAttribute="trailing" secondItem="HyF-eR-XzU" secondAttribute="trailing" constant="16" id="5Rr-7k-k5t"/>
-                            <constraint firstItem="ojp-xy-cK8" firstAttribute="trailing" secondItem="cL8-bo-h1s" secondAttribute="trailing" constant="16" id="FjR-HB-O9N"/>
-                            <constraint firstItem="cL8-bo-h1s" firstAttribute="leading" secondItem="ojp-xy-cK8" secondAttribute="leading" constant="16" id="Gv7-Fg-Ov4"/>
-                            <constraint firstItem="ojp-xy-cK8" firstAttribute="trailing" secondItem="C0I-b6-4NC" secondAttribute="trailing" constant="16" id="NTJ-aE-XUd"/>
-                            <constraint firstItem="C0I-b6-4NC" firstAttribute="leading" secondItem="ojp-xy-cK8" secondAttribute="leading" constant="16" id="PkG-L6-OlP"/>
-                            <constraint firstItem="HyF-eR-XzU" firstAttribute="leading" secondItem="ojp-xy-cK8" secondAttribute="leading" constant="16" id="VCF-9r-qAH"/>
-                            <constraint firstItem="Cko-Lr-TEz" firstAttribute="leading" secondItem="ojp-xy-cK8" secondAttribute="leading" constant="16" id="YHu-CL-wFC"/>
-                            <constraint firstItem="ojp-xy-cK8" firstAttribute="trailing" secondItem="Jmf-ov-77u" secondAttribute="trailing" constant="16" id="ecY-p5-xi1"/>
-                            <constraint firstItem="Jmf-ov-77u" firstAttribute="leading" secondItem="ojp-xy-cK8" secondAttribute="leading" constant="16" id="kEn-Ma-cRq"/>
+                            <constraint firstItem="7tt-Rl-aCc" firstAttribute="top" secondItem="CH2-Xv-Gl7" secondAttribute="bottom" constant="7" id="12e-MQ-hJj"/>
+                            <constraint firstItem="D0u-K8-Uo6" firstAttribute="leading" secondItem="K0M-9c-eS3" secondAttribute="leading" id="3xJ-A6-jks"/>
+                            <constraint firstItem="Dst-ff-QFt" firstAttribute="top" secondItem="HfS-K0-S2L" secondAttribute="bottom" constant="22" id="5Vg-OM-Dnn"/>
+                            <constraint firstItem="HfS-K0-S2L" firstAttribute="top" secondItem="ojp-xy-cK8" secondAttribute="top" constant="35" id="7Dc-hN-cub"/>
+                            <constraint firstItem="D0u-K8-Uo6" firstAttribute="trailing" secondItem="K0M-9c-eS3" secondAttribute="trailing" id="9vW-RV-Kki"/>
+                            <constraint firstItem="CH2-Xv-Gl7" firstAttribute="top" secondItem="tuY-RS-ISx" secondAttribute="bottom" constant="8" symbolic="YES" id="Ir7-9Z-HPm"/>
+                            <constraint firstItem="ojp-xy-cK8" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Dst-ff-QFt" secondAttribute="trailing" symbolic="YES" id="Jdp-r6-qcq"/>
+                            <constraint firstItem="HfS-K0-S2L" firstAttribute="trailing" secondItem="Lrm-uX-es0" secondAttribute="trailingMargin" id="Kr1-6Q-c5N"/>
+                            <constraint firstItem="7tt-Rl-aCc" firstAttribute="leading" secondItem="D0u-K8-Uo6" secondAttribute="leading" id="Lfb-e2-RGd"/>
+                            <constraint firstItem="tuY-RS-ISx" firstAttribute="trailing" secondItem="7tt-Rl-aCc" secondAttribute="trailing" id="TEE-kc-BVS"/>
+                            <constraint firstItem="Dst-ff-QFt" firstAttribute="leading" secondItem="tuY-RS-ISx" secondAttribute="leading" id="UuS-hn-0bj"/>
+                            <constraint firstItem="HfS-K0-S2L" firstAttribute="leading" secondItem="Dst-ff-QFt" secondAttribute="leading" id="ch7-xb-gdc"/>
+                            <constraint firstItem="tuY-RS-ISx" firstAttribute="leading" secondItem="CH2-Xv-Gl7" secondAttribute="leading" id="dra-hv-4Iv"/>
+                            <constraint firstItem="HfS-K0-S2L" firstAttribute="leading" secondItem="Lrm-uX-es0" secondAttribute="leadingMargin" id="e3X-Lz-rcL"/>
+                            <constraint firstItem="K0M-9c-eS3" firstAttribute="top" secondItem="Lrm-uX-es0" secondAttribute="top" constant="478" id="iSh-HX-hQ0"/>
+                            <constraint firstItem="7tt-Rl-aCc" firstAttribute="trailing" secondItem="D0u-K8-Uo6" secondAttribute="trailing" id="jfV-ZW-vHc"/>
+                            <constraint firstItem="ojp-xy-cK8" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="CH2-Xv-Gl7" secondAttribute="trailing" symbolic="YES" id="opI-AE-Jhv"/>
+                            <constraint firstItem="CH2-Xv-Gl7" firstAttribute="leading" secondItem="7tt-Rl-aCc" secondAttribute="leading" id="tRh-le-XVC"/>
+                            <constraint firstItem="K0M-9c-eS3" firstAttribute="top" secondItem="D0u-K8-Uo6" secondAttribute="bottom" constant="30" id="u4Y-O3-hUg"/>
+                            <constraint firstItem="D0u-K8-Uo6" firstAttribute="top" secondItem="7tt-Rl-aCc" secondAttribute="bottom" constant="50" id="uLv-5T-bov"/>
+                            <constraint firstItem="HfS-K0-S2L" firstAttribute="trailing" secondItem="tuY-RS-ISx" secondAttribute="trailing" id="uwg-o1-qKl"/>
+                            <constraint firstItem="tuY-RS-ISx" firstAttribute="top" secondItem="Dst-ff-QFt" secondAttribute="bottom" constant="8" symbolic="YES" id="zyU-A4-rId"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ojp-xy-cK8"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="DBi-mn-dRY"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Olo-g7-Xdp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2622" y="-191"/>
+            <point key="canvasLocation" x="2692" y="266"/>
         </scene>
         <!--Alpha Numeric Cipher View Controller-->
         <scene sceneID="yGn-9o-1SG">
@@ -295,81 +410,149 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="AlphaNumeric Cipher" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6l9-UU-hoa">
-                                <rect key="frame" x="16" y="92" width="343" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="AlphaCode Cipher" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U0U-Kz-j3t">
+                                <rect key="frame" x="16" y="99" width="343" height="36"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="olW-x0-VIA">
-                                <rect key="frame" x="16" y="215" width="69" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Message:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bcm-XM-TiB">
+                                <rect key="frame" x="16" y="157" width="74" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Shift Message by:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WwQ-P2-l1b">
-                                <rect key="frame" x="16" y="298" width="137" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shift Message by:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gFD-ah-8QI">
+                                <rect key="frame" x="16" y="223.5" width="136.5" height="21.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Message to encrypt" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cRw-77-Juk">
-                                <rect key="frame" x="16" y="244" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Message to encrypt" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QEg-IO-ZmD">
+                                <rect key="frame" x="16" y="185.5" width="343" height="30"/>
+                                <color key="backgroundColor" red="0.76757022480000003" green="0.95612270030000002" blue="1" alpha="0.79612585619999998" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="uge-Oc-Zui"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Secret number " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cD0-CB-MC3">
-                                <rect key="frame" x="16" y="327" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Secret number " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="deq-WP-siP">
+                                <rect key="frame" x="16" y="252" width="343" height="30"/>
+                                <color key="backgroundColor" red="0.76757022480000003" green="0.95612270030000002" blue="1" alpha="0.79612585619999998" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="FrI-F3-Z1y"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mWW-4v-c8S">
-                                <rect key="frame" x="16" y="395" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
-                                <state key="normal" title="Encrypt Message">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PPg-c8-ePu">
-                                <rect key="frame" x="16" y="519" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
-                                <state key="normal" title="Decrypt Message">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v5S-xm-eeL">
-                                <rect key="frame" x="16" y="433" width="343" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uob-7E-aue">
-                                <rect key="frame" x="16" y="557" width="343" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Uzh-QD-JXe">
+                                <rect key="frame" x="16" y="332" width="343" height="116"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ib7-jf-hCb">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="40"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="DAd-be-aTk"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <state key="normal" title="Encrypt">
+                                            <color key="titleColor" red="0.1021560663" green="0.66764018780000001" blue="0.73549945240000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gg6-ME-Ug8">
+                                        <rect key="frame" x="0.0" y="48" width="343" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="m2I-ZR-EMw"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                        <state key="normal" title="Encrypt Message">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uK6-Re-ecH">
+                                        <rect key="frame" x="0.0" y="86" width="343" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="MLN-MV-CPI"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="8df-PA-OII">
+                                <rect key="frame" x="16" y="478" width="343" height="116"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NiV-P1-aDT">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="40"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="3lf-01-4cs"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <state key="normal" title="Decrypt">
+                                            <color key="titleColor" red="0.1021560663" green="0.66764018780000001" blue="0.73549945240000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VsU-m6-gg9">
+                                        <rect key="frame" x="0.0" y="58" width="343" height="10"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="10" id="9Ri-Yl-hZU"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="30" id="mh2-wo-eEI"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                        <state key="normal" title="Decrypt Message">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wpC-yk-jhN">
+                                        <rect key="frame" x="0.0" y="86" width="343" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="lAA-ll-I6w"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.085041746779999997" green="0.72795050760000002" blue="0.71724810839999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Uzh-QD-JXe" firstAttribute="leading" secondItem="8df-PA-OII" secondAttribute="leading" id="61z-p4-PjM"/>
+                            <constraint firstItem="QEg-IO-ZmD" firstAttribute="trailing" secondItem="deq-WP-siP" secondAttribute="trailing" id="7lE-oU-cQU"/>
+                            <constraint firstItem="deq-WP-siP" firstAttribute="leading" secondItem="Uzh-QD-JXe" secondAttribute="leading" id="BE4-39-XfG"/>
+                            <constraint firstItem="deq-WP-siP" firstAttribute="trailing" secondItem="Uzh-QD-JXe" secondAttribute="trailing" id="HpK-HW-NqW"/>
+                            <constraint firstItem="gFD-ah-8QI" firstAttribute="leading" secondItem="deq-WP-siP" secondAttribute="leading" id="IXf-X2-KqO"/>
+                            <constraint firstItem="bcm-XM-TiB" firstAttribute="top" secondItem="U0U-Kz-j3t" secondAttribute="bottom" constant="22" id="OsT-1h-85B"/>
+                            <constraint firstItem="U0U-Kz-j3t" firstAttribute="leading" secondItem="bcm-XM-TiB" secondAttribute="leading" id="RjP-3U-XXS"/>
+                            <constraint firstItem="8df-PA-OII" firstAttribute="top" secondItem="PkE-QC-BGW" secondAttribute="top" constant="478" id="Sh9-Ka-xZe"/>
+                            <constraint firstItem="deq-WP-siP" firstAttribute="top" secondItem="gFD-ah-8QI" secondAttribute="bottom" constant="7" id="Sic-wf-tja"/>
+                            <constraint firstItem="U0U-Kz-j3t" firstAttribute="top" secondItem="dgd-K4-uvd" secondAttribute="top" constant="35" id="TFI-Mo-tXP"/>
+                            <constraint firstItem="U0U-Kz-j3t" firstAttribute="trailing" secondItem="PkE-QC-BGW" secondAttribute="trailingMargin" id="Wwr-yN-jac"/>
+                            <constraint firstItem="dgd-K4-uvd" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="bcm-XM-TiB" secondAttribute="trailing" symbolic="YES" id="Ycy-br-izY"/>
+                            <constraint firstItem="U0U-Kz-j3t" firstAttribute="leading" secondItem="PkE-QC-BGW" secondAttribute="leadingMargin" id="ZJX-sS-TtD"/>
+                            <constraint firstItem="U0U-Kz-j3t" firstAttribute="trailing" secondItem="QEg-IO-ZmD" secondAttribute="trailing" id="bJ8-42-86e"/>
+                            <constraint firstItem="dgd-K4-uvd" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="gFD-ah-8QI" secondAttribute="trailing" symbolic="YES" id="hEn-53-xi5"/>
+                            <constraint firstItem="gFD-ah-8QI" firstAttribute="top" secondItem="QEg-IO-ZmD" secondAttribute="bottom" constant="8" symbolic="YES" id="jHu-lP-aos"/>
+                            <constraint firstItem="Uzh-QD-JXe" firstAttribute="top" secondItem="deq-WP-siP" secondAttribute="bottom" constant="50" id="l9E-lj-M2f"/>
+                            <constraint firstItem="Uzh-QD-JXe" firstAttribute="trailing" secondItem="8df-PA-OII" secondAttribute="trailing" id="lmr-MZ-nQK"/>
+                            <constraint firstItem="QEg-IO-ZmD" firstAttribute="top" secondItem="bcm-XM-TiB" secondAttribute="bottom" constant="8" symbolic="YES" id="n4z-Sy-Buj"/>
+                            <constraint firstItem="QEg-IO-ZmD" firstAttribute="leading" secondItem="gFD-ah-8QI" secondAttribute="leading" id="rCz-TX-mEq"/>
+                            <constraint firstItem="bcm-XM-TiB" firstAttribute="leading" secondItem="QEg-IO-ZmD" secondAttribute="leading" id="tkT-DS-FTm"/>
+                            <constraint firstItem="8df-PA-OII" firstAttribute="top" secondItem="Uzh-QD-JXe" secondAttribute="bottom" constant="30" id="xEV-n0-GJV"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="dgd-K4-uvd"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UGe-1t-IpT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3522" y="-610"/>
+            <point key="canvasLocation" x="3908" y="266"/>
         </scene>
         <!--Emoji Cipher View Controller-->
         <scene sceneID="ICG-3v-5Qp">
@@ -379,81 +562,146 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="EmojiCode Cipher" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GsU-hr-Qnr">
-                                <rect key="frame" x="16" y="100" width="343" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EmojiCode Cipher" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GsU-hr-Qnr">
+                                <rect key="frame" x="16" y="99" width="343" height="36"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tAf-bP-BEx">
-                                <rect key="frame" x="16" y="188" width="69" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tAf-bP-BEx">
+                                <rect key="frame" x="16" y="157" width="74" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Shift Message by:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wzO-TS-gs3">
-                                <rect key="frame" x="16" y="271" width="137" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shift Message by:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wzO-TS-gs3">
+                                <rect key="frame" x="16" y="223.5" width="136.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Message to encrypt" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f15-GS-ico">
-                                <rect key="frame" x="16" y="217" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Message to encrypt" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f15-GS-ico">
+                                <rect key="frame" x="16" y="185.5" width="343" height="30"/>
+                                <color key="backgroundColor" red="0.87575736029999995" green="0.81572244699999996" blue="1" alpha="0.79609910100000003" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Blc-80-7cB"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Secret number " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Idv-Xa-XYj">
-                                <rect key="frame" x="16" y="300" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ufi-iV-Kk8">
+                                <rect key="frame" x="16" y="332" width="343" height="116"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ECE-h1-27b">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="40"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="6ZD-hF-JZP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <state key="normal" title="Encrypt">
+                                            <color key="titleColor" red="0.64940238149999996" green="0.31482305490000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vBp-Ec-24q">
+                                        <rect key="frame" x="0.0" y="48" width="343" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                        <state key="normal" title="Encrypt Message">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eMO-hh-MwZ">
+                                        <rect key="frame" x="0.0" y="86" width="343" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Dj0-r2-RKX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="116" id="MBc-BI-AxY"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="QIS-OO-wOc">
+                                <rect key="frame" x="16" y="478" width="343" height="116"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nr9-Jb-j1t">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="40"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <state key="normal" title="Decrypt">
+                                            <color key="titleColor" red="0.64940238149999996" green="0.31482305490000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VlX-Fd-6jH">
+                                        <rect key="frame" x="0.0" y="58" width="343" height="10"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="10" id="q5e-Dt-dU9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                        <state key="normal" title="Decrypt Message">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jGg-mC-UhY">
+                                        <rect key="frame" x="0.0" y="86" width="343" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="QZf-yp-2pY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Secret number " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Idv-Xa-XYj">
+                                <rect key="frame" x="16" y="252" width="343" height="30"/>
+                                <color key="backgroundColor" red="0.87575736032890372" green="0.81572244702312324" blue="1" alpha="0.79609910102739723" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="xcy-dG-x0x"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vBp-Ec-24q">
-                                <rect key="frame" x="16" y="368" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
-                                <state key="normal" title="Encrypt Message">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VlX-Fd-6jH">
-                                <rect key="frame" x="16" y="492" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
-                                <state key="normal" title="Decrypt Message">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eMO-hh-MwZ">
-                                <rect key="frame" x="16" y="406" width="343" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jGg-mC-UhY">
-                                <rect key="frame" x="16" y="530" width="343" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.64940238152493857" green="0.314823054864663" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Mng-Xb-mrA" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="wzO-TS-gs3" secondAttribute="trailing" symbolic="YES" id="2Eq-Q3-U7C"/>
+                            <constraint firstItem="Idv-Xa-XYj" firstAttribute="leading" secondItem="Ufi-iV-Kk8" secondAttribute="leading" id="6Rz-wQ-7rQ"/>
+                            <constraint firstItem="Ufi-iV-Kk8" firstAttribute="top" secondItem="Idv-Xa-XYj" secondAttribute="bottom" constant="50" id="6r7-5o-tSl"/>
+                            <constraint firstItem="Mng-Xb-mrA" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="tAf-bP-BEx" secondAttribute="trailing" symbolic="YES" id="FCC-Ii-EVX"/>
+                            <constraint firstItem="Idv-Xa-XYj" firstAttribute="top" secondItem="wzO-TS-gs3" secondAttribute="bottom" constant="8" id="HUX-6I-c99"/>
+                            <constraint firstItem="GsU-hr-Qnr" firstAttribute="leading" secondItem="k6K-ct-Xi8" secondAttribute="leadingMargin" id="HVG-nO-8pB"/>
+                            <constraint firstItem="f15-GS-ico" firstAttribute="leading" secondItem="wzO-TS-gs3" secondAttribute="leading" id="Jz2-pW-cqn"/>
+                            <constraint firstItem="Ufi-iV-Kk8" firstAttribute="leading" secondItem="QIS-OO-wOc" secondAttribute="leading" id="Ocz-tb-3Jf"/>
+                            <constraint firstItem="tAf-bP-BEx" firstAttribute="leading" secondItem="f15-GS-ico" secondAttribute="leading" id="TrS-wA-4vZ"/>
+                            <constraint firstItem="GsU-hr-Qnr" firstAttribute="trailing" secondItem="k6K-ct-Xi8" secondAttribute="trailingMargin" id="UPd-nP-2YH"/>
+                            <constraint firstItem="wzO-TS-gs3" firstAttribute="leading" secondItem="Idv-Xa-XYj" secondAttribute="leading" id="X32-6U-LIb"/>
+                            <constraint firstItem="f15-GS-ico" firstAttribute="trailing" secondItem="Idv-Xa-XYj" secondAttribute="trailing" id="clg-GV-SHF"/>
+                            <constraint firstItem="QIS-OO-wOc" firstAttribute="top" secondItem="k6K-ct-Xi8" secondAttribute="top" constant="478" id="d0g-jG-i7Y"/>
+                            <constraint firstItem="GsU-hr-Qnr" firstAttribute="leading" secondItem="tAf-bP-BEx" secondAttribute="leading" id="eO3-Uy-vv6"/>
+                            <constraint firstItem="f15-GS-ico" firstAttribute="top" secondItem="tAf-bP-BEx" secondAttribute="bottom" constant="8" symbolic="YES" id="emW-QQ-pC5"/>
+                            <constraint firstItem="GsU-hr-Qnr" firstAttribute="top" secondItem="Mng-Xb-mrA" secondAttribute="top" constant="35" id="gGS-Xu-elB"/>
+                            <constraint firstItem="tAf-bP-BEx" firstAttribute="top" secondItem="GsU-hr-Qnr" secondAttribute="bottom" constant="22" id="gZj-ot-kte"/>
+                            <constraint firstItem="GsU-hr-Qnr" firstAttribute="trailing" secondItem="f15-GS-ico" secondAttribute="trailing" id="goM-Wi-bMF"/>
+                            <constraint firstItem="wzO-TS-gs3" firstAttribute="top" secondItem="f15-GS-ico" secondAttribute="bottom" constant="8" symbolic="YES" id="goV-7U-iY0"/>
+                            <constraint firstItem="Mng-Xb-mrA" firstAttribute="bottom" secondItem="QIS-OO-wOc" secondAttribute="bottom" constant="73" id="hvq-OW-anC"/>
+                            <constraint firstItem="QIS-OO-wOc" firstAttribute="top" secondItem="Ufi-iV-Kk8" secondAttribute="bottom" constant="30" id="mVc-Nd-sSA"/>
+                            <constraint firstItem="Ufi-iV-Kk8" firstAttribute="trailing" secondItem="QIS-OO-wOc" secondAttribute="trailing" id="xEW-Yn-0ft"/>
+                            <constraint firstItem="Idv-Xa-XYj" firstAttribute="trailing" secondItem="Ufi-iV-Kk8" secondAttribute="trailing" id="xOX-J1-wxE"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Mng-Xb-mrA"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ElD-pH-Zr4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3565" y="237"/>
+            <point key="canvasLocation" x="3297" y="266"/>
         </scene>
         <!--Unicode Cipher View Controller-->
         <scene sceneID="Oz4-hb-t1b">
@@ -463,99 +711,175 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Unicode Cipher" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lBi-p3-mMU">
-                                <rect key="frame" x="16" y="102" width="343" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EmojiCode Cipher" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JJd-KO-V3X">
+                                <rect key="frame" x="16" y="99" width="343" height="36"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdc-Os-gjC">
-                                <rect key="frame" x="16" y="202" width="69" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c5A-zz-3Fo">
+                                <rect key="frame" x="16" y="157" width="343" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Shift Message by:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bg2-9i-vXJ">
-                                <rect key="frame" x="16" y="285" width="137" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shift Message by:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2gi-e0-jM8">
+                                <rect key="frame" x="16" y="223.5" width="343" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Message to encrypt" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I3n-Aa-Ckx">
-                                <rect key="frame" x="16" y="231" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Message to encrypt" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cMs-sU-9h2">
+                                <rect key="frame" x="16" y="185.5" width="343" height="30"/>
+                                <color key="backgroundColor" red="0.68353954057135136" green="1" blue="0.760741056719896" alpha="0.80147688356164382" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="QTm-Dl-t2q"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Secret number " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="27e-1T-KvU">
-                                <rect key="frame" x="16" y="314" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Secret number " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c4v-zG-sTi">
+                                <rect key="frame" x="16" y="252" width="343" height="30"/>
+                                <color key="backgroundColor" red="0.6835395406" green="1" blue="0.76074105670000003" alpha="0.80147688360000002" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="fRk-gN-qPh"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fje-eW-jrI">
-                                <rect key="frame" x="16" y="382" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
-                                <state key="normal" title="Encrypt Message">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bHE-YV-nwx">
-                                <rect key="frame" x="16" y="506" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
-                                <state key="normal" title="Decrypt Message">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1eK-IF-HOY">
-                                <rect key="frame" x="16" y="420" width="343" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r5P-6r-anR">
-                                <rect key="frame" x="16" y="544" width="343" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7sJ-4A-1T1">
+                                <rect key="frame" x="16" y="332" width="343" height="116"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BUs-ro-guP">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="40"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="si6-Fa-ok1"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <state key="normal" title="Encrypt">
+                                            <color key="titleColor" red="0.0" green="0.64019817609999996" blue="0.29048052229999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2A1-Ej-fp7">
+                                        <rect key="frame" x="0.0" y="48" width="343" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                        <state key="normal" title="Encrypt Message">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oj8-qY-ewb">
+                                        <rect key="frame" x="0.0" y="86" width="343" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Uuv-dw-ZaP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="116" id="GfM-Lb-Ua9"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="Mqy-we-dmH">
+                                <rect key="frame" x="16" y="478" width="343" height="116"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ms-VY-T66">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="40"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="bpQ-gD-Gcs"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <state key="normal" title="Decrypt">
+                                            <color key="titleColor" red="0.0" green="0.64019817609999996" blue="0.29048052229999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPr-Mk-wEC">
+                                        <rect key="frame" x="0.0" y="58" width="343" height="10"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="10" id="vdk-WB-Cwv"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                        <state key="normal" title="Decrypt Message">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PKN-Qg-K7n">
+                                        <rect key="frame" x="0.0" y="86" width="343" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="r5G-70-3K9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.64019817607534235" blue="0.29048052226027399" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="t7m-fL-Kpb" firstAttribute="trailing" secondItem="c4v-zG-sTi" secondAttribute="trailing" constant="16" id="0BI-gr-XXb"/>
+                            <constraint firstItem="t7m-fL-Kpb" firstAttribute="trailing" secondItem="7sJ-4A-1T1" secondAttribute="trailing" constant="16" id="7Sb-Nn-AYx"/>
+                            <constraint firstItem="c4v-zG-sTi" firstAttribute="leading" secondItem="t7m-fL-Kpb" secondAttribute="leading" constant="16" id="9aJ-tQ-Rwh"/>
+                            <constraint firstItem="c4v-zG-sTi" firstAttribute="top" secondItem="2gi-e0-jM8" secondAttribute="bottom" constant="8" id="AEP-88-sAF"/>
+                            <constraint firstItem="7sJ-4A-1T1" firstAttribute="top" secondItem="c4v-zG-sTi" secondAttribute="bottom" constant="50" id="AR1-NJ-c6c"/>
+                            <constraint firstItem="t7m-fL-Kpb" firstAttribute="trailing" secondItem="Mqy-we-dmH" secondAttribute="trailing" constant="16" id="G9i-JM-YPd"/>
+                            <constraint firstItem="cMs-sU-9h2" firstAttribute="leading" secondItem="t7m-fL-Kpb" secondAttribute="leading" constant="16" id="Hho-xb-1KY"/>
+                            <constraint firstItem="c5A-zz-3Fo" firstAttribute="leading" secondItem="cMs-sU-9h2" secondAttribute="leading" id="IA4-hY-Ic6"/>
+                            <constraint firstItem="JJd-KO-V3X" firstAttribute="trailing" secondItem="cMs-sU-9h2" secondAttribute="trailing" id="IEe-ce-3B5"/>
+                            <constraint firstItem="t7m-fL-Kpb" firstAttribute="trailing" secondItem="cMs-sU-9h2" secondAttribute="trailing" constant="16" id="IF9-TK-fAo"/>
+                            <constraint firstItem="t7m-fL-Kpb" firstAttribute="trailing" secondItem="c5A-zz-3Fo" secondAttribute="trailing" constant="16" id="Oxo-Z0-Uj0"/>
+                            <constraint firstItem="t7m-fL-Kpb" firstAttribute="trailing" secondItem="2gi-e0-jM8" secondAttribute="trailing" constant="16" id="QT2-ZB-oQ9"/>
+                            <constraint firstItem="2gi-e0-jM8" firstAttribute="leading" secondItem="t7m-fL-Kpb" secondAttribute="leading" constant="16" id="UaS-UK-0t0"/>
+                            <constraint firstItem="c5A-zz-3Fo" firstAttribute="leading" secondItem="t7m-fL-Kpb" secondAttribute="leading" constant="16" id="Xd0-pp-pYu"/>
+                            <constraint firstItem="c4v-zG-sTi" firstAttribute="leading" secondItem="7sJ-4A-1T1" secondAttribute="leading" id="ZQT-Fd-7Yx"/>
+                            <constraint firstItem="7sJ-4A-1T1" firstAttribute="trailing" secondItem="Mqy-we-dmH" secondAttribute="trailing" id="c6r-gf-rP7"/>
+                            <constraint firstItem="cMs-sU-9h2" firstAttribute="leading" secondItem="2gi-e0-jM8" secondAttribute="leading" id="cBQ-2L-i3A"/>
+                            <constraint firstItem="JJd-KO-V3X" firstAttribute="leading" secondItem="c5A-zz-3Fo" secondAttribute="leading" id="iuc-Di-iQW"/>
+                            <constraint firstItem="7sJ-4A-1T1" firstAttribute="leading" secondItem="t7m-fL-Kpb" secondAttribute="leading" constant="16" id="juj-pJ-Cz0"/>
+                            <constraint firstItem="JJd-KO-V3X" firstAttribute="leading" secondItem="t7m-fL-Kpb" secondAttribute="leading" constant="16" id="mRf-aw-zGe"/>
+                            <constraint firstItem="7sJ-4A-1T1" firstAttribute="leading" secondItem="Mqy-we-dmH" secondAttribute="leading" id="phA-6l-TGt"/>
+                            <constraint firstItem="t7m-fL-Kpb" firstAttribute="trailing" secondItem="JJd-KO-V3X" secondAttribute="trailing" constant="16" id="qCj-ca-UJF"/>
+                            <constraint firstItem="cMs-sU-9h2" firstAttribute="trailing" secondItem="c4v-zG-sTi" secondAttribute="trailing" id="r1A-Os-u0S"/>
+                            <constraint firstItem="2gi-e0-jM8" firstAttribute="top" secondItem="cMs-sU-9h2" secondAttribute="bottom" constant="8" symbolic="YES" id="rA3-kG-HOt"/>
+                            <constraint firstItem="c5A-zz-3Fo" firstAttribute="top" secondItem="JJd-KO-V3X" secondAttribute="bottom" constant="22" id="rid-EU-kvI"/>
+                            <constraint firstItem="2gi-e0-jM8" firstAttribute="leading" secondItem="c4v-zG-sTi" secondAttribute="leading" id="s3J-P8-ScP"/>
+                            <constraint firstItem="Mqy-we-dmH" firstAttribute="top" secondItem="7sJ-4A-1T1" secondAttribute="bottom" constant="30" id="thC-m4-cNT"/>
+                            <constraint firstItem="Mqy-we-dmH" firstAttribute="leading" secondItem="t7m-fL-Kpb" secondAttribute="leading" constant="16" id="ueX-ld-A14"/>
+                            <constraint firstItem="cMs-sU-9h2" firstAttribute="top" secondItem="c5A-zz-3Fo" secondAttribute="bottom" constant="8" symbolic="YES" id="vSm-qT-F40"/>
+                            <constraint firstItem="c4v-zG-sTi" firstAttribute="trailing" secondItem="7sJ-4A-1T1" secondAttribute="trailing" id="w0A-Ig-rqC"/>
+                            <constraint firstItem="JJd-KO-V3X" firstAttribute="top" secondItem="t7m-fL-Kpb" secondAttribute="top" constant="35" id="wJF-sk-2J9"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="t7m-fL-Kpb"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RUq-MK-JLy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4380" y="-425"/>
+            <point key="canvasLocation" x="4516" y="266"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="5uF-xt-FA2">
+        <scene sceneID="L9x-1E-lmH">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mH6-xr-LIy" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Jfx-vA-ZNq" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="K86-Fd-E94">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="axM-ei-ntR">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="3Ms-CY-E6i" kind="relationship" relationship="rootViewController" id="dVM-2h-HNT"/>
+                        <segue destination="3Ms-CY-E6i" kind="relationship" relationship="rootViewController" id="bhb-nF-VdF"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3Ig-IB-5la" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pC2-Yn-O8S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8.8000000000000007" y="-191.1544227886057"/>
+            <point key="canvasLocation" x="2192.8000000000002" y="-501.49925037481262"/>
         </scene>
     </scenes>
 </document>

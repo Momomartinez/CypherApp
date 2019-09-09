@@ -13,7 +13,7 @@ class AlphaNumericCipherViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
+    var cipherAlpha: CipherProtocol = AlphanumericCesarCipher()
     //************************* Beginning of AlphanumericCesarCipher Struct *************************//
     struct AlphanumericCesarCipher: CipherProtocol {
         

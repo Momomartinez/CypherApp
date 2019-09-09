@@ -15,6 +15,7 @@ class EmojiCipherViewController: UIViewController {
 
     }
     
+    var cipherEmoji = EmojiCipherViewController()
     
     struct EmojiCipher: CipherProtocol{
         let alpha: [Character] = [ "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
