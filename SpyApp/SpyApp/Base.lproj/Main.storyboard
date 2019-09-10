@@ -25,7 +25,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="327" height="60"/>
                                         <color key="backgroundColor" red="0.91240368150684936" green="0.29395869006849318" blue="0.47883668664383561" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <state key="normal" title="CesarCypher">
+                                        <state key="normal" title="CeaserCipher">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -34,14 +34,14 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <segue destination="bwW-GE-sFa" kind="show" id="HuZ-V4-nLB"/>
+                                            <segue destination="bwW-GE-sFa" kind="show" id="GOe-HC-fo2"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CDb-oX-Eyb">
                                         <rect key="frame" x="0.0" y="84" width="327" height="60"/>
                                         <color key="backgroundColor" red="0.085041746779999997" green="0.72795050760000002" blue="0.71724810839999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <state key="normal" title="AlphaCypher">
+                                        <state key="normal" title="AlphaNumeric">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -50,14 +50,14 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <segue destination="iPY-Zo-kMT" kind="show" id="ihf-Mf-XVj"/>
+                                            <segue destination="iPY-Zo-kMT" kind="show" id="v2v-na-4s8"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ef5-FO-seR">
                                         <rect key="frame" x="0.0" y="168" width="327" height="60"/>
                                         <color key="backgroundColor" red="0.0" green="0.64019817609999996" blue="0.29048052229999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <state key="normal" title="UnicodeCypher">
+                                        <state key="normal" title="UnicodeCipher">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -66,14 +66,14 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <segue destination="OcI-ra-JF2" kind="show" id="PdL-x8-0UA"/>
+                                            <segue destination="OcI-ra-JF2" kind="show" id="iYd-Db-bqD"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="joF-AD-AXN">
                                         <rect key="frame" x="0.0" y="252" width="327" height="60"/>
                                         <color key="backgroundColor" red="0.64940238149999996" green="0.31482305490000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <state key="normal" title="EmojiCode">
+                                        <state key="normal" title="EmojiCipher">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -82,7 +82,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <segue destination="VAd-Rr-wZu" kind="show" id="HcD-Wl-CTi"/>
+                                            <segue destination="VAd-Rr-wZu" kind="show" id="xNv-sf-zav"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -150,23 +150,14 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GuP-vz-1G8">
                                 <rect key="frame" x="16" y="194" width="343" height="30"/>
                                 <state key="normal" title="Encrypt"/>
-                                <connections>
-                                    <action selector="encryptButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aq3-dH-QG8"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HrY-NP-lku">
                                 <rect key="frame" x="16" y="454" width="180" height="30"/>
                                 <state key="normal" title="AlphanumericCesarCipher"/>
-                                <connections>
-                                    <action selector="cipherSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MHj-85-cyV"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cE5-FE-Ogz">
                                 <rect key="frame" x="16" y="293" width="343" height="30"/>
                                 <state key="normal" title="Decrypt"/>
-                                <connections>
-                                    <action selector="decrpytButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xke-sr-Vip"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dc4-1h-5tS">
                                 <rect key="frame" x="16" y="339" width="343" height="21"/>
@@ -183,23 +174,14 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2L1-Rv-wDg">
                                 <rect key="frame" x="16" y="416" width="94" height="30"/>
                                 <state key="normal" title="CeaserCipher"/>
-                                <connections>
-                                    <action selector="cipherSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nw0-ZR-UPN"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sh9-Bh-yAg">
                                 <rect key="frame" x="16" y="492" width="103" height="30"/>
                                 <state key="normal" title="UnicodeCipher"/>
-                                <connections>
-                                    <action selector="cipherSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="drv-cX-wBl"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z2w-1A-HEK">
                                 <rect key="frame" x="16" y="530" width="83" height="30"/>
                                 <state key="normal" title="EmojiCipher"/>
-                                <connections>
-                                    <action selector="cipherSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kcb-G4-b6x"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -239,12 +221,6 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="GsS-lW-EpN"/>
-                    <connections>
-                        <outlet property="decryptOutput" destination="dc4-1h-5tS" id="ZSf-yT-q5B"/>
-                        <outlet property="encryptOutput" destination="YJv-Hn-OQ1" id="P7H-MB-QkJ"/>
-                        <outlet property="inputField" destination="oFv-jN-Jwk" id="2gG-W8-gtx"/>
-                        <outlet property="secretField" destination="t7D-q9-YZg" id="ij9-08-G7x"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -253,12 +229,12 @@
         <!--Item-->
         <scene sceneID="4Ol-Ir-sN9">
             <objects>
-                <viewController id="bwW-GE-sFa" customClass="CeasarCipherViewController" customModule="SpyApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="bwW-GE-sFa" customClass="ViewController" customModule="SpyApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lrm-uX-es0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EmojiCode Cipher" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HfS-K0-S2L">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CeasarCipher" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HfS-K0-S2L">
                                 <rect key="frame" x="16" y="99" width="343" height="37"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -309,6 +285,9 @@
                                         <state key="normal" title="Encrypt">
                                             <color key="titleColor" red="0.91240368149999995" green="0.29395869009999998" blue="0.47883668660000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
+                                        <connections>
+                                            <action selector="encryptButtonPressed:" destination="bwW-GE-sFa" eventType="touchUpInside" id="xS2-eR-wYW"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OBk-co-cLm">
                                         <rect key="frame" x="0.0" y="48" width="343" height="30"/>
@@ -345,6 +324,9 @@
                                         <state key="normal" title="Decrypt">
                                             <color key="titleColor" red="0.91240368149999995" green="0.29395869009999998" blue="0.47883668660000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
+                                        <connections>
+                                            <action selector="decrpytButtonPressed:" destination="bwW-GE-sFa" eventType="touchUpInside" id="CsV-FZ-bqK"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ste-ni-Dgp">
                                         <rect key="frame" x="0.0" y="58" width="343" height="10"/>
@@ -397,20 +379,26 @@
                         <viewLayoutGuide key="safeArea" id="ojp-xy-cK8"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="DBi-mn-dRY"/>
+                    <connections>
+                        <outlet property="decryptOutput" destination="ykb-1R-3A0" id="vTK-9Q-v8P"/>
+                        <outlet property="encryptOutput" destination="S9k-Sd-64L" id="9U5-Aq-UVS"/>
+                        <outlet property="inputField" destination="tuY-RS-ISx" id="2rk-l8-Pa5"/>
+                        <outlet property="secretField" destination="7tt-Rl-aCc" id="xb2-bN-pJH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Olo-g7-Xdp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2692" y="266"/>
         </scene>
-        <!--Alpha Numeric Cipher View Controller-->
+        <!--Alpha View Controller-->
         <scene sceneID="yGn-9o-1SG">
             <objects>
-                <viewController id="iPY-Zo-kMT" customClass="AlphaNumericCipherViewController" customModule="SpyApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="iPY-Zo-kMT" customClass="AlphaViewController" customModule="SpyApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PkE-QC-BGW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="AlphaCode Cipher" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U0U-Kz-j3t">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="AlphaNumericCipher" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U0U-Kz-j3t">
                                 <rect key="frame" x="16" y="99" width="343" height="36"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -461,6 +449,9 @@
                                         <state key="normal" title="Encrypt">
                                             <color key="titleColor" red="0.1021560663" green="0.66764018780000001" blue="0.73549945240000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
+                                        <connections>
+                                            <action selector="encryptButtonPressed:" destination="iPY-Zo-kMT" eventType="touchUpInside" id="SgJ-0T-d7o"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gg6-ME-Ug8">
                                         <rect key="frame" x="0.0" y="48" width="343" height="30"/>
@@ -497,6 +488,9 @@
                                         <state key="normal" title="Decrypt">
                                             <color key="titleColor" red="0.1021560663" green="0.66764018780000001" blue="0.73549945240000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
+                                        <connections>
+                                            <action selector="decrpytButtonPressed:" destination="iPY-Zo-kMT" eventType="touchUpInside" id="aAe-dM-fEw"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VsU-m6-gg9">
                                         <rect key="frame" x="0.0" y="58" width="343" height="10"/>
@@ -549,20 +543,26 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dgd-K4-uvd"/>
                     </view>
+                    <connections>
+                        <outlet property="decryptOutput" destination="wpC-yk-jhN" id="m9X-P7-CWC"/>
+                        <outlet property="encryptOutput" destination="uK6-Re-ecH" id="etk-9T-jEV"/>
+                        <outlet property="inputField" destination="QEg-IO-ZmD" id="k3z-2H-rNn"/>
+                        <outlet property="secretField" destination="deq-WP-siP" id="cYD-Va-z6S"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UGe-1t-IpT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3908" y="266"/>
         </scene>
-        <!--Emoji Cipher View Controller-->
+        <!--Emoji View Controller-->
         <scene sceneID="ICG-3v-5Qp">
             <objects>
-                <viewController id="VAd-Rr-wZu" customClass="EmojiCipherViewController" customModule="SpyApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="VAd-Rr-wZu" customClass="EmojiViewController" customModule="SpyApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="k6K-ct-Xi8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EmojiCode Cipher" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GsU-hr-Qnr">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EmojiCipher" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GsU-hr-Qnr">
                                 <rect key="frame" x="16" y="99" width="343" height="36"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -603,6 +603,9 @@
                                         <state key="normal" title="Encrypt">
                                             <color key="titleColor" red="0.64940238149999996" green="0.31482305490000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
+                                        <connections>
+                                            <action selector="encryptButtonPressed:" destination="VAd-Rr-wZu" eventType="touchUpInside" id="bc1-Cq-YtM"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vBp-Ec-24q">
                                         <rect key="frame" x="0.0" y="48" width="343" height="30"/>
@@ -636,6 +639,9 @@
                                         <state key="normal" title="Decrypt">
                                             <color key="titleColor" red="0.64940238149999996" green="0.31482305490000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
+                                        <connections>
+                                            <action selector="decrpytButtonPressed:" destination="VAd-Rr-wZu" eventType="touchUpInside" id="zjX-B7-XRE"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VlX-Fd-6jH">
                                         <rect key="frame" x="0.0" y="58" width="343" height="10"/>
@@ -698,20 +704,26 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Mng-Xb-mrA"/>
                     </view>
+                    <connections>
+                        <outlet property="decryptOutput" destination="jGg-mC-UhY" id="d67-OJ-3OK"/>
+                        <outlet property="encryptOutput" destination="eMO-hh-MwZ" id="2Wu-qN-3Uu"/>
+                        <outlet property="inputField" destination="f15-GS-ico" id="fYP-jK-93f"/>
+                        <outlet property="secretField" destination="Idv-Xa-XYj" id="Dpt-MS-7Pg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ElD-pH-Zr4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3297" y="266"/>
         </scene>
-        <!--Unicode Cipher View Controller-->
+        <!--Unicode View Controller-->
         <scene sceneID="Oz4-hb-t1b">
             <objects>
-                <viewController id="OcI-ra-JF2" customClass="UnicodeCipherViewController" customModule="SpyApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="OcI-ra-JF2" customClass="UnicodeViewController" customModule="SpyApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eUg-cK-H9Y">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EmojiCode Cipher" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JJd-KO-V3X">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UnicodeCipher" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JJd-KO-V3X">
                                 <rect key="frame" x="16" y="99" width="343" height="36"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -762,6 +774,9 @@
                                         <state key="normal" title="Encrypt">
                                             <color key="titleColor" red="0.0" green="0.64019817609999996" blue="0.29048052229999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="encryptButtonPressed:" destination="OcI-ra-JF2" eventType="touchUpInside" id="CKx-uk-QuU"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2A1-Ej-fp7">
                                         <rect key="frame" x="0.0" y="48" width="343" height="30"/>
@@ -798,6 +813,9 @@
                                         <state key="normal" title="Decrypt">
                                             <color key="titleColor" red="0.0" green="0.64019817609999996" blue="0.29048052229999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="decrpytButtonPressed:" destination="OcI-ra-JF2" eventType="touchUpInside" id="ELb-W1-uSf"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPr-Mk-wEC">
                                         <rect key="frame" x="0.0" y="58" width="343" height="10"/>
@@ -858,6 +876,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="t7m-fL-Kpb"/>
                     </view>
+                    <connections>
+                        <outlet property="decryptOutput" destination="PKN-Qg-K7n" id="YsY-DM-H5Y"/>
+                        <outlet property="encryptOutput" destination="Oj8-qY-ewb" id="tJG-KV-2uc"/>
+                        <outlet property="inputField" destination="cMs-sU-9h2" id="cUM-DO-a78"/>
+                        <outlet property="secretField" destination="c4v-zG-sTi" id="Vzz-eb-Vty"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RUq-MK-JLy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

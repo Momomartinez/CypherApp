@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CD077090228533F200EA3DB8 /* CeasarCipherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD07708F228533F200EA3DB8 /* CeasarCipherViewController.swift */; };
-		CD0770922285367700EA3DB8 /* AlphaNumericCipherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0770912285367700EA3DB8 /* AlphaNumericCipherViewController.swift */; };
-		CD077094228536BC00EA3DB8 /* UnicodeCipherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD077093228536BC00EA3DB8 /* UnicodeCipherViewController.swift */; };
-		CD077096228536E500EA3DB8 /* EmojiCipherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD077095228536E500EA3DB8 /* EmojiCipherViewController.swift */; };
+		CD2BE29F232859360016C54D /* AlphaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2BE29E232859360016C54D /* AlphaViewController.swift */; };
+		CD2BE2A123285DA10016C54D /* EmojiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2BE2A023285DA10016C54D /* EmojiViewController.swift */; };
+		CD2BE2A323285DB70016C54D /* UnicodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2BE2A223285DB70016C54D /* UnicodeViewController.swift */; };
 		CD978302221648080056013C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD978301221648080056013C /* AppDelegate.swift */; };
-		CD978304221648080056013C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD978303221648080056013C /* ViewController.swift */; };
+		CD978304221648080056013C /* CeasarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD978303221648080056013C /* CeasarViewController.swift */; };
 		CD978307221648080056013C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD978305221648080056013C /* Main.storyboard */; };
 		CD978309221648080056013C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD978308221648080056013C /* Assets.xcassets */; };
 		CD97830C221648080056013C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD97830A221648080056013C /* LaunchScreen.storyboard */; };
@@ -30,13 +29,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CD07708F228533F200EA3DB8 /* CeasarCipherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeasarCipherViewController.swift; sourceTree = "<group>"; };
-		CD0770912285367700EA3DB8 /* AlphaNumericCipherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphaNumericCipherViewController.swift; sourceTree = "<group>"; };
-		CD077093228536BC00EA3DB8 /* UnicodeCipherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnicodeCipherViewController.swift; sourceTree = "<group>"; };
-		CD077095228536E500EA3DB8 /* EmojiCipherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiCipherViewController.swift; sourceTree = "<group>"; };
+		CD2BE29E232859360016C54D /* AlphaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphaViewController.swift; sourceTree = "<group>"; };
+		CD2BE2A023285DA10016C54D /* EmojiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiViewController.swift; sourceTree = "<group>"; };
+		CD2BE2A223285DB70016C54D /* UnicodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnicodeViewController.swift; sourceTree = "<group>"; };
 		CD9782FE221648080056013C /* SpyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD978301221648080056013C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CD978303221648080056013C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CD978303221648080056013C /* CeasarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeasarViewController.swift; sourceTree = "<group>"; };
 		CD978306221648080056013C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CD978308221648080056013C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD97830B221648080056013C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -86,11 +84,10 @@
 			isa = PBXGroup;
 			children = (
 				CD978301221648080056013C /* AppDelegate.swift */,
-				CD978303221648080056013C /* ViewController.swift */,
-				CD07708F228533F200EA3DB8 /* CeasarCipherViewController.swift */,
-				CD0770912285367700EA3DB8 /* AlphaNumericCipherViewController.swift */,
-				CD077093228536BC00EA3DB8 /* UnicodeCipherViewController.swift */,
-				CD077095228536E500EA3DB8 /* EmojiCipherViewController.swift */,
+				CD978303221648080056013C /* CeasarViewController.swift */,
+				CD2BE2A023285DA10016C54D /* EmojiViewController.swift */,
+				CD2BE2A223285DB70016C54D /* UnicodeViewController.swift */,
+				CD2BE29E232859360016C54D /* AlphaViewController.swift */,
 				CD978305221648080056013C /* Main.storyboard */,
 				CD978308221648080056013C /* Assets.xcassets */,
 				CD97830A221648080056013C /* LaunchScreen.storyboard */,
@@ -209,12 +206,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD077094228536BC00EA3DB8 /* UnicodeCipherViewController.swift in Sources */,
-				CD0770922285367700EA3DB8 /* AlphaNumericCipherViewController.swift in Sources */,
-				CD978304221648080056013C /* ViewController.swift in Sources */,
+				CD2BE29F232859360016C54D /* AlphaViewController.swift in Sources */,
+				CD978304221648080056013C /* CeasarViewController.swift in Sources */,
+				CD2BE2A323285DB70016C54D /* UnicodeViewController.swift in Sources */,
 				CD978302221648080056013C /* AppDelegate.swift in Sources */,
-				CD077096228536E500EA3DB8 /* EmojiCipherViewController.swift in Sources */,
-				CD077090228533F200EA3DB8 /* CeasarCipherViewController.swift in Sources */,
+				CD2BE2A123285DA10016C54D /* EmojiViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
